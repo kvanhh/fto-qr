@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công cụ tạo QR code</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logo10.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="body_ctn">
+        <div class="header_ctn">
+            <div class="home_logo">
+                <i class="fi fi-br-menu-burger" id="home"></i>
+                <img src="./img/logo10.png">
+            </div>
+            <div class="navg">
+                <ul>
+                    <li><a href="#" title="No Available"><i class="fi fi-br-user-slash"></i></a></li>
+                    <li><a href="#" title="No Available"><i class="fi fi-rr-hands-heart"></i></a></li>
+                    <li><a href="#" title="No Available"><i class="fi fi-rr-site-alt"></i></a></li>
+                    <li><a href="#" title="No Available"><i class="fi fi-rr-lightbulb-question"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="body_qr">
+            <div class="body_ctner">
+                <div class="body_ctn-header">
+                    <h1 style="font-weight: 600;">Công cụ tạo QR code</h1>
+                    <h6>Công cụ tạo mã QR miễn phí được hỗ trợ bởi KVA</h6>
+                </div>
+                <div class="body_ctn-body">
+                    <input style="padding-left: 12px !important;" id="input_qr" name="input_qr" type="text" placeholder="Nhập nội dung hoặc URL">
+                    <button id="createQR">Tạo</button>
+                </div>
+                <div id="loading_animt" class="loading_animation">
+                    <div class="spinner-border text-light"></div>
+                </div>
+                <div class="body_ctn-img">
+                    <div class="body_img">
+                        <img id="qr_img-change" src="./img/empty-img.png">
+                        <div class="img_brand">
+                            <h4 id="nbr">KVA</h4>
+                            <h4 id="tbr">QR</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_qr">
+                    <!-- <h6>Powered by <a href="https://www.fto.io.vn/ductoan10th11">vVit</a></h6> -->
+                </div>
+            </div>
+        </div>
+
+    
+    <script src="./main.js"></script>   
+</body>
+</html>
